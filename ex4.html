@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+        /* ------ Resets & Basics ------ */
+        body {
+            margin: 0;
+            font-family: Outfit;
+        }
+
+        h3 {
+            padding-top: 2%;
+            padding-left: 2%;
+            color: white;
+            margin: 0;
+        }
+
+        article h3 {
+            color: black;
+        }
+
+        /* ------ Desktop (top & bottom) ------ */
+
+        header {
+            background-color: #111023;
+            height: 20vh;
+        }
+
+        .small-container {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        nav {
+            background-color: #C22177;
+            flex-grow: 1;
+        }
+
+        .mini-container {
+            flex-grow: 5;
+            display: flex;
+        }
+
+        article {
+            flex-grow: 4;
+        }
+
+        aside {
+            background-color: #320388;
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #111023;
+            height: 20vh;
+        }
+
+        /* ------ Tablet (top & bottom) ------ */
+        @media (max-width: 767px) {
+            .small-container {
+                flex-direction: column;
+            }
+
+            .mini-container {
+                flex-grow: 10;
+            }
+        }
+
+        /* ------ Mobile (top & bottom) ------ */
+        @media (max-width: 575px) {
+            .mini-container {
+                flex-direction: column;
+            }
+
+            article {
+                flex-grow: 10;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <h3>Header</h3>
+        </header>
+        <div class="small-container">
+            <nav>
+                <h3>Nav</h3>
+            </nav>
+            <div class="mini-container">
+                <article>
+                    <h3>Article</h3>
+                </article>
+                <aside>
+                    <h3>Aside</h3>
+                </aside>
+            </div>
+        </div>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
